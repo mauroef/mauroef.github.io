@@ -274,4 +274,17 @@ body {
   .project__item {
     width: 100%;
   }
+    /* underlines off*/
+  .about__title::after {
+    display: none;
+  }
+  .about__title::after {
+    display: none;
+  }
+  .project__title::after {
+    display: none;
+  }
+  .contact__title::after {
+    display: none;
+  }
 }
