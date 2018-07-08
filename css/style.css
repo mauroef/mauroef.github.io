@@ -274,17 +274,17 @@ body {
   .project__item {
     width: 100%;
   }
-    /* underlines off*/
+    /* underlines shorter*/
   .about__title::after {
-    display: none;
+    width:auto;
   }
   .about__title::after {
-    display: none;
+    width:auto;
   }
   .project__title::after {
-    display: none;
+    width:auto;
   }
   .contact__title::after {
-    display: none;
+    width:auto;
   }
 }
