@@ -274,17 +274,14 @@ body {
   .project__item {
     width: 100%;
   }
-    /* underlines shorter*/
+    /* underlines shorter*/  
   .about__title::after {
-    width:auto;
-  }
-  .about__title::after {
-    width:auto;
+    width: 75px;
   }
   .project__title::after {
-    width:auto;
+    width: 200px;
   }
   .contact__title::after {
-    width:auto;
+    width: 150px;
   }
 }
