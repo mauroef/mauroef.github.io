@@ -90,11 +90,12 @@ body {
 }
 .about__photo {
   border-radius: 50%;
-  border: 6px solid var(--thin-secondary-color);
+  border: 9px solid var(--thin-secondary-color);
   margin: 0 auto;
   max-width: 100%;
   display: block;
   height: auto;
+  width: 75%;
 }
 .about__text-container {
   color: #fff;
@@ -150,7 +151,10 @@ body {
   background-color: var(--light-secondary-color);
 }
 .project__item:hover {
-  background-color: var(--thin-secondary-color);
+  /* background-color: var(--thin-secondary-color); */
+  animation-name: colorify-project;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
 }
 .project__item-title {
   font-size: 1.3em;
@@ -218,6 +222,12 @@ body {
   cursor: pointer;
   background-color: var(--thin-secondary-color);  
 }
+.contact__submit:hover {
+  color: #fff;
+  animation-name: colorify-contact;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
 /* footer */
 .footer__social-links {
   color: #fff;
@@ -241,6 +251,17 @@ body {
   text-align: center;
   background-color: var(--secondary-color);
   line-height: 3;
+}
+/* keyframes */
+@keyframes colorify-project {
+  100% {
+    background-color: var(--thin-secondary-color);
+  }
+}
+@keyframes colorify-contact {
+  100% {
+    background-color: var(--secondary-color);
+  }
 }
 /* media queries */
 @media (max-width: 768px) {
