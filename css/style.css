@@ -295,7 +295,7 @@ body {
   .project__item {
     width: 100%;
   }
-  /* underlines shorter*/  
+  /* underlines shorter */  
   .about__title::after {
     width: 75px;
   }
@@ -306,3 +306,5 @@ body {
     width: 150px;
   }
 }
+/* to do: 
+switch sketch for svg-poligon */
