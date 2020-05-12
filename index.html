@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="theme-color" content="#334D5C" />
+    <meta name="theme-color" content="#12c2e9" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mauro Ezequiel Frete - Personal Portfolio</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
@@ -23,10 +24,11 @@
       <!--   navbar -->
       <nav id="navbar" class="navbar">
         <div class="navbar__left">
-          <span class="navbar__logo">My Personal Porfolio</span>
+          <a href="#top" class="navbar__logo">Mauro Ezequiel Frete</a>
         </div>
         <div class="navbar__right">
           <a href="#about" class="navbar__link">About</a>
+          <a href="#skills" class="navbar__link">Skills</a>
           <a href="#practices" class="navbar__link">Practices</a>
           <a href="#projects" class="navbar__link">Projects</a>
           <a href="#contact" class="navbar__link">Contact</a>
@@ -42,7 +44,9 @@
           <a href="#contact" class="welcome__action">Contact me</a>
         </div>
         <div class="welcome__arrow">
-          <i class="fas fa-arrow-circle-down fa-4x"></i>
+          <a href="#about"
+            ><i class="fas fa-arrow-circle-down fa-4x welcome__arrow-icon"></i
+          ></a>
         </div>
       </section>
       <!-- about section -->
@@ -52,7 +56,7 @@
           <div class="about__photo-container">
             <img
               class="about__photo"
-              src="https://res.cloudinary.com/maurovault/image/upload/e_auto_color/v1531360928/personal-portfolio/profile.jpg"
+              src="https://drive.google.com/thumbnail?id=1kh9KB1TgjsSwALfNXWwAqNO7Uvgfo3sh"
               alt="profile_photo"
             />
           </div>
@@ -66,6 +70,68 @@
               I always try to be aware of the new technologies and apply my
               knowledge to solve the problems that the client requests.
             </p>
+          </div>
+        </div>
+      </section>
+      <!-- divider -->
+      <div class="diagonal">
+        <div class="diagonal__top--about"></div>
+        <div class="diagonal__bottom--about"></div>
+      </div>
+      <!-- skills section -->
+      <section id="skills" class="skills">
+        <h2 class="skills__title">Skills</h2>
+        <div class="skills__group">
+          <div class="skills__item">
+            <div class="skills__icon-container">
+              <i
+                class="skills__icon fas fa-code fa-6x"
+                style="padding-left: 40px;"
+              ></i>
+            </div>
+            <div class="skills_description">
+              <h4 class="skills__subtitle">Frontend</h4>
+              <ul class="skills__list">
+                <li>CSS3, SASS, flexbox, grid</li>
+                <li>React JS</li>
+                <li>Firebase</li>
+                <li>Webpack, Gulp</li>
+                <li>Ajax Fetch API</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__icon-container">
+              <i class="skills__icon fas fa-server fa-6x"></i>
+            </div>
+            <div class="skills_description">
+              <h4 class="skills__subtitle">Backend</h4>
+              <ul class="skills__list">
+                <li>ASP.NET</li>
+                <li>Node JS</li>
+                <li>PHP</li>
+                <li>SQL Server</li>
+                <li>My Sql</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__icon-container">
+              <i
+                class="skills__icon fas fa-code-branch fa-6x"
+                style="padding-left: 30px;"
+              ></i>
+            </div>
+            <div class="skills_description">
+              <h4 class="skills__subtitle">Other knowledge</h4>
+              <ul class="skills__list">
+                <li>Git</li>
+                <li>Bash</li>
+                <li>Docker</li>
+                <li>Raspberry Pi</li>
+                <li>Linux, MacOS</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -162,7 +228,7 @@
       </section>
       <!-- projects section -->
       <section id="projects" class="project">
-        <h2 class="project__title">Last Projects</h2>
+        <h2 class="project__title">Lastest Projects</h2>
         <div class="project__group">
           <div class="project__item">
             <a
@@ -227,15 +293,17 @@
           </div>
         </div>
       </section>
+      <!-- divider -->
       <div class="diagonal">
-        <div class="diagonal__top"></div>
-        <div class="diagonal__bottom"></div>
+        <div class="diagonal__top--contact"></div>
+        <div class="diagonal__bottom--contact"></div>
       </div>
       <!--   contact section -->
       <section id="contact" class="contact">
         <h2 class="contact__title">Let's Work Together!</h2>
         <p class="contact__text">
-          To contact me, send me a message or follow me in my social networks.
+          Please, send me a message or follow me in my social networks. I' ll
+          respond shortly.
         </p>
         <form id="contact-form" method="POST" class="contact__form">
           <div class="contact__group">
@@ -281,6 +349,15 @@
           </div>
         </form>
       </section>
+      <!-- download cv -->
+      <section class="download">
+        <a
+          href="https://drive.google.com/file/d/1r9lA9XeIW2RQ4mRzFB_6WcJwkBe1b3yD/view?usp=sharing"
+          class="download__button"
+          target="_blank"
+          >Download CV <i class="fas fa-file-pdf"></i
+        ></a>
+      </section>
       <!--   footer -->
       <footer class="footer">
         <div class="footer__social-links">
@@ -290,13 +367,13 @@
           <a href="https://linkedin.com/in/mauroef" target="_blank"
             ><i class="fab fa-linkedin fa-3x footer__sl"></i
           ></a>
-          <a href="https://linkedin.com/in/mauroef" target="_blank"
+          <a href="https://www.freecodecamp.org/mauroef" target="_blank"
             ><i class="fab fa-free-code-camp fa-3x footer__sl"></i
           ></a>
         </div>
         <div class="footer__text">
           <p style="margin: 0px 0px;">
-            Copyright © 2018 by Mauro Ezequiel Frete. All Rights Reserved.
+            Copyright © 2020 by Mauro Ezequiel Frete. All Rights Reserved.
           </p>
         </div>
       </footer>

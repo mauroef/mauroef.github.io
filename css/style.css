@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -22,17 +25,18 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: var(--primary-color);
-  /* top of the sketch-practice-section */
-  z-index: 3;
+  z-index: 2;
 }
 .navbar__logo {
   display: inline-block;
   font-weight: 700;
   padding: 14px;
   color: #fff;
+  text-decoration: none;
 }
 .navbar__logo:hover {
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
 }
 .navbar__link {
   display: inline-block;
@@ -71,7 +75,7 @@ body {
 }
 .welcome__action {
   display: block;
-  width: 25%;
+  width: fit-content;
   text-decoration: none;
   margin: 0 auto;
   font-size: 1.5em;
@@ -84,15 +88,16 @@ body {
   background-color: var(--third-color);
 }
 .welcome__action:hover {
-  color: #fff;
   animation-name: colorify-action;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 .welcome__arrow {
   text-align: center;
-  color: #fff;
   opacity: 0.5;
+}
+.welcome__arrow-icon {
+  color: #fff;
 }
 /* about */
 .about {
@@ -102,13 +107,13 @@ body {
 .about__title {
   text-align: center;
   color: #fff;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 .about__title::after {
   content: '';
   display: block;
   border: 3px solid var(--secondary-color);
-  width: 150px;
+  width: 125px;
   margin: 5px auto;
 }
 .about__description {
@@ -138,6 +143,64 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* skills */
+.skills {
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  padding: var(--section-padding);
+}
+.skills__title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #fff; /* var(--primary-color); */
+  margin-top: 0;
+  padding-top: 35px;
+}
+.skills__title::after {
+  content: '';
+  display: block;
+  border: 3px solid var(--secondary-color);
+  width: 110px;
+  margin: 5px auto;
+}
+.skills__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills__item {
+  margin: 0 75px;
+}
+.skills__icon-container {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 6px solid var(--secondary-color);
+}
+.skills__icon {
+  padding: 20px;
+  border-radius: 4px;
+  color: #9c47fc;
+  display: block;
+  background: -webkit-linear-gradient(
+    -180deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--third-color)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skills__subtitle {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.skills__list {
+  color: #fff;
+  font-size: 1.1em;
+}
+
 /* practice & project*/
 .practice,
 .project {
@@ -146,7 +209,7 @@ body {
 .practice__title,
 .project__title {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   color: var(--primary-color);
 }
 .practice__title::after,
@@ -195,7 +258,7 @@ body {
   background-color: var(--primary-color);
 }
 .contact__title {
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   color: #fff;
 }
@@ -249,11 +312,44 @@ body {
   font-weight: 700;
   width: 100%;
   cursor: pointer;
+  text-transform: uppercase;
   background-color: var(--third-color);
 }
 .contact__submit:hover {
   color: #fff;
   animation-name: colorify-contact;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+/* download */
+.download {
+  padding: var(--section-padding) 0;
+  height: 200px;
+  background: linear-gradient(
+    -90deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--third-color)
+  );
+  display: flex;
+  justify-content: center;
+}
+.download__button {
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--third-color);
+  margin-top: 25px;
+}
+.download__button:hover {
+  animation-name: colorify-action;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
@@ -301,7 +397,54 @@ body {
     background-color: var(--secondary-color);
   }
 }
+/* diagonal separator */
+.diagonal {
+  margin: -10px 0 -11px 0;
+}
+.diagonal__top--about {
+  width: 100%;
+  height: 90px;
+  background-color: var(--third-color);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  margin-top: 9px;
+}
+.diagonal__bottom--about {
+  width: 100%;
+  height: 90px;
+  background: var(--primary-color);
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 99%);
+  clip-path: polygon(100% 0, 0 100%, 100% 99%);
+  /* margin-top: -90px; */
+}
+.diagonal__top--contact {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.diagonal__bottom--contact {
+  width: 100%;
+  height: 90px;
+  background: var(--primary-color);
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 99%);
+  clip-path: polygon(100% 0, 0 100%, 100% 99%);
+  margin-top: -90px;
+}
 /* media queries */
+@media (min-width: 1080px) {
+  /* center content on large screen */
+  .about__description,
+  .skills__group,
+  .contact__form {
+    margin: 0 200px;
+  }
+  .practice,
+  .project {
+    margin: 0 200px;
+  }
+}
 @media (max-width: 768px) {
   /* navbar */
   .navbar__left {
@@ -313,6 +456,10 @@ body {
   }
   .navbar {
     display: block;
+  }
+  /* skills */
+  .skills__group {
+    justify-content: space-between;
   }
   /* about-section */
   .about__description {
@@ -340,26 +487,24 @@ body {
   .practice__title::after {
     width: 200px;
   }
+  .project__title::after {
+    width: 175px;
+  }
   .contact__title::after {
     width: 150px;
   }
-}
-/* diagonal separator */
-.diagonal {
-  margin: -10px 0;
-}
-.diagonal__top {
-  width: 100%;
-  height: 90px;
-  background-color: #fff;
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
-  clip-path: polygon(100% 0, 0 0, 0 100%);
-}
-.diagonal__bottom {
-  width: 100%;
-  height: 90px;
-  background: var(--primary-color);
-  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 99%);
-  clip-path: polygon(100% 0, 0 100%, 100% 99%);
-  margin-top: -90px;
+  /* reduce titles */
+  .welcome__title {
+    font-size: 2em;
+  }
+  .welcome__text {
+    font-size: 1.5em;
+  }
+  .about__title,
+  .skills__title,
+  .practice__title,
+  .project__title,
+  .contact__title {
+    font-size: 2em;
+  }
 }
