@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: var(--primary-color);
-  /* top of the sketch-project-section */
+  /* top of the sketch-practice-section */
   z-index: 3;
 }
 .navbar__logo {
@@ -46,7 +46,9 @@ body {
 }
 /* welcome */
 .welcome {
-  padding-top: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100vh;
   background: linear-gradient(
     -45deg,
@@ -56,6 +58,7 @@ body {
   );
 }
 .welcome__data {
+  padding-top: 10vh;
   text-align: center;
   color: #fff;
 }
@@ -65,6 +68,31 @@ body {
 .welcome__text {
   font-size: 2.5em;
   font-weight: 300;
+}
+.welcome__action {
+  display: block;
+  width: 25%;
+  text-decoration: none;
+  margin: 0 auto;
+  font-size: 1.5em;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+.welcome__action:hover {
+  color: #fff;
+  animation-name: colorify-action;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+.welcome__arrow {
+  text-align: center;
+  color: #fff;
+  opacity: 0.5;
 }
 /* about */
 .about {
@@ -91,7 +119,7 @@ body {
   padding: 0 15px;
 }
 .about__photo {
-  border-radius: 50%;
+  border-radius: 10%;
   border: 9px solid var(--secondary-color);
   margin: 0 auto;
   max-width: 100%;
@@ -110,39 +138,37 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* project */
+/* practice & project*/
+.practice,
 .project {
-  z-index: 1;
-  margin-top: 30px;
-  margin-bottom: -30px;
-  background-color: #fff;
-  /* for diagonal border */
-  transform: skew(0deg, -2deg);
   padding: var(--section-padding) 0;
 }
+.practice__title,
 .project__title {
   text-align: center;
   font-size: 2em;
   color: var(--primary-color);
-  transform: skew(0deg, 2deg);
 }
+.practice__title::after,
 .project__title::after {
   content: '';
   display: block;
   border: 3px solid var(--secondary-color);
-  width: 400px;
+  width: 300px;
   margin: 5px auto;
 }
+.practice__group,
 .project__group {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  transform: skew(0deg, 2deg);
 }
+.practice__link,
 .project__link {
   text-decoration: none;
   color: #fff;
 }
+.practice__item,
 .project__item {
   padding-top: 20px;
   margin: 20px 15px;
@@ -152,12 +178,13 @@ body {
   color: #fff;
   background-color: var(--third-color);
 }
+.practice__item:hover,
 .project__item:hover {
-  /* background-color: var(--thin-secondary-color); */
-  animation-name: colorify-project;
+  animation-name: colorify-practice;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
+.practice__item-title,
 .project__item-title {
   font-size: 1.3em;
   font-weight: 400;
@@ -256,10 +283,15 @@ body {
   line-height: 3;
 }
 /* keyframes */
-@keyframes colorify-project {
-  50% {
+@keyframes colorify-action {
+  75% {
     background-color: var(--secondary-color);
   }
+  100% {
+    background-color: var(--primary-color);
+  }
+}
+@keyframes colorify-practice {
   100% {
     background-color: var(--primary-color);
   }
@@ -297,18 +329,37 @@ body {
   }
 }
 @media (max-width: 576px) {
-  /* project-section */
-  .project__item {
+  /* practice-section */
+  .practice__item {
     width: 100%;
   }
   /* underlines shorter */
   .about__title::after {
     width: 75px;
   }
-  .project__title::after {
+  .practice__title::after {
     width: 200px;
   }
   .contact__title::after {
     width: 150px;
   }
+}
+/* diagonal separator */
+.diagonal {
+  margin: -10px 0;
+}
+.diagonal__top {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.diagonal__bottom {
+  width: 100%;
+  height: 90px;
+  background: var(--primary-color);
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 99%);
+  clip-path: polygon(100% 0, 0 100%, 100% 99%);
+  margin-top: -90px;
 }
