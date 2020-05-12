@@ -1,142 +1,227 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#334D5C" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mauro Ezequiel Frete - Personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="theme-color" content="#334D5C">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mauro Ezequiel Frete - Personal Portfolio</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <div class="container">
-<!--   navbar -->
-  <nav id="navbar" class="navbar">
-    <div class="navbar__left">
-      <span class="navbar__logo">My Personal Porfolio</span>
-    </div>
-    <div class="navbar__right">
-      <a href="#about" class="navbar__link">About</a>
-      <a href="#projects" class="navbar__link">My Stuff</a>
-      <a href="#contact" class="navbar__link">Contact</a>
-    </div>
-  </nav>
-<!--   welcome section -->
-  <section id="welcome" class="welcome">
-    <div class="welcome__data">
-      <h1 class="welcome__title">Hi, I'm Mauro</h1>
-      <p class="welcome__text" style="margin-top: 0;">Web developer | Buenos Aires, AR</p>
-    </div>
-  </section>
-<!-- about section -->
-  <section id="about" class="about">
-    <h2 class="about__title">About Me</h2>
-    <div class="about__description">
-      <div class="about__photo-container">
-        <img class="about__photo" src="https://res.cloudinary.com/maurovault/image/upload/e_auto_color/v1531360928/personal-portfolio/profile.jpg" alt="profile_photo">
-      </div>
-      <div class="about__text-container">
-        <p>
-          Passionate about computer science, I graduated as web developer at La Matanza university. Also in my free time I dedicate to complete the freeCodeCamp's full stack web development certification.
+  <body>
+    <div class="container">
+      <!--   navbar -->
+      <nav id="navbar" class="navbar">
+        <div class="navbar__left">
+          <span class="navbar__logo">My Personal Porfolio</span>
+        </div>
+        <div class="navbar__right">
+          <a href="#about" class="navbar__link">About</a>
+          <a href="#projects" class="navbar__link">My Stuff</a>
+          <a href="#contact" class="navbar__link">Contact</a>
+        </div>
+      </nav>
+      <!--   welcome section -->
+      <section id="welcome" class="welcome">
+        <div class="welcome__data">
+          <h1 class="welcome__title">Hi, I'm Mauro</h1>
+          <p class="welcome__text" style="margin-top: 0;">
+            Web developer | Buenos Aires, AR
+          </p>
+        </div>
+      </section>
+      <!-- about section -->
+      <section id="about" class="about">
+        <h2 class="about__title">About Me</h2>
+        <div class="about__description">
+          <div class="about__photo-container">
+            <img
+              class="about__photo"
+              src="https://res.cloudinary.com/maurovault/image/upload/e_auto_color/v1531360928/personal-portfolio/profile.jpg"
+              alt="profile_photo"
+            />
+          </div>
+          <div class="about__text-container">
+            <p>
+              Passionate about computer science, I graduated as web developer at
+              La Matanza university. Also in my free time I dedicate to complete
+              the freeCodeCamp's full stack web development certification.
+            </p>
+            <p>
+              I always try to be aware of the new technologies and apply my
+              knowledge to solve the problems that the client requests.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--   projects section -->
+      <section id="projects" class="project">
+        <h2 class="project__title">Some of my work to share</h2>
+        <div class="project__group">
+          <div class="project__item">
+            <a
+              href="https://codepen.io/mauroef/full/MXErvR/"
+              target="_blank"
+              class="project__link"
+            >
+              <span><i class="far fa-id-card fa-8x"></i></span>
+            </a>
+            <h3 class="project__item-title">
+              <a
+                href="https://codepen.io/mauroef/full/MXErvR/"
+                target="_blank"
+                class="project__link"
+                >Tribute Page</a
+              >
+            </h3>
+          </div>
+          <div class="project__item">
+            <a
+              href="https://codepen.io/mauroef/full/aKYzqR/"
+              target="_blank"
+              class="project__link"
+            >
+              <span><i class="fab fa-wpforms fa-8x"></i></span>
+            </a>
+            <h3 class="project__item-title">
+              <a
+                href="https://codepen.io/mauroef/full/aKYzqR/"
+                target="_blank"
+                class="project__link"
+                >Survey Form</a
+              >
+            </h3>
+          </div>
+          <div class="project__item">
+            <a
+              href="https://codepen.io/mauroef/full/pKLeMa/"
+              target="_blank"
+              class="project__link"
+            >
+              <span><i class="fab fa-product-hunt fa-8x"></i></span>
+            </a>
+            <h3 class="project__item-title">
+              <a
+                href="https://codepen.io/mauroef/full/pKLeMa/"
+                target="_blank"
+                class="project__link"
+                >Product Landing Page</a
+              >
+            </h3>
+          </div>
+          <div class="project__item">
+            <a
+              href="https://codepen.io/mauroef/full/ERpyvq/"
+              target="_blank"
+              class="project__link"
+            >
+              <span><i class="fas fa-book fa-8x"></i></span>
+            </a>
+            <h3 class="project__item-title">
+              <a
+                href="https://codepen.io/mauroef/full/ERpyvq/"
+                target="_blank"
+                class="project__link"
+                >Technical Documentation Page</a
+              >
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!--   contact section -->
+      <section id="contact" class="contact">
+        <h2 class="contact__title">Let's Keep in Touch!</h2>
+        <p class="contact__text">
+          To contact me, send me a message or follow me in my social networks.
         </p>
-        <p>
-          I always try to be aware of the new technologies and apply my knowledge to solve the problems that the client requests.
-        </p>
-      </div>
+        <form id="contact-form" method="POST" class="contact__form">
+          <div class="contact__group">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+              class="contact__input"
+            />
+          </div>
+          <div class="contact__group">
+            <input
+              type="email"
+              name="_replyto"
+              id="email"
+              placeholder="Email"
+              required
+              class="contact__input"
+            />
+          </div>
+          <div class="contact__group">
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Comment..."
+              class="contact__textarea"
+              required
+            ></textarea>
+          </div>
+          <div class="contact__group">
+            <input
+              type="submit"
+              name="submit"
+              value="submit"
+              id="submit"
+              class="contact__submit"
+            />
+            <!-- formSpree hidden inputs -->
+            <input type="hidden" name="_subject" value="personal-portfolio" />
+            <input type="text" name="_gotcha" style="display: none;" />
+          </div>
+        </form>
+      </section>
+      <!--   footer -->
+      <footer class="footer">
+        <div class="footer__social-links">
+          <a href="https://github.com/mauroef" target="_blank"
+            ><i class="fab fa-github fa-3x footer__sl"></i
+          ></a>
+          <a href="https://linkedin.com/in/mauroef" target="_blank"
+            ><i class="fab fa-linkedin fa-3x footer__sl"></i
+          ></a>
+          <a href="https://linkedin.com/in/mauroef" target="_blank"
+            ><i class="fab fa-free-code-camp fa-3x footer__sl"></i
+          ></a>
+        </div>
+        <div class="footer__text">
+          <p style="margin: 0px 0px;">
+            Copyright © 2018 by Mauro Ezequiel Frete. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
     </div>
-  </section>
-<!--   projects section -->
-  <section id="projects" class="project">
-    <h2 class="project__title">Some of my work to share</h2>
-    <div class="project__group">     
-      <div class="project__item">    
-        <a href="https://codepen.io/mauroef/full/MXErvR/" target="_blank" class="project__link">
-          <span><i class="far fa-id-card fa-8x"></i></span>       
-        </a>          
-        <h3 class="project__item-title">
-          <a href="https://codepen.io/mauroef/full/MXErvR/" target="_blank" class="project__link">Tribute Page</a>
-        </h3>                        
-      </div>   
-      <div class="project__item">
-        <a href="https://codepen.io/mauroef/full/aKYzqR/" target="_blank" class="project__link">
-          <span><i class="fab fa-wpforms fa-8x"></i></span>
-        </a>                  
-        <h3 class="project__item-title">
-          <a href="https://codepen.io/mauroef/full/aKYzqR/" target="_blank" class="project__link">Survey Form</a>          
-        </h3>                
-      </div>
-      <div class="project__item">
-        <a href="https://codepen.io/mauroef/full/pKLeMa/" target="_blank" class="project__link">
-          <span><i class="fab fa-product-hunt fa-8x"></i></span>
-        </a>                  
-        <h3 class="project__item-title">
-          <a href="https://codepen.io/mauroef/full/pKLeMa/" target="_blank" class="project__link">Product Landing Page</a>          
-        </h3>                
-      </div>
-      <div class="project__item">
-        <a href="https://codepen.io/mauroef/full/ERpyvq/" target="_blank" class="project__link">
-          <span><i class="fas fa-book fa-8x"></i></span>
-        </a>                  
-        <h3 class="project__item-title">
-          <a href="https://codepen.io/mauroef/full/ERpyvq/" target="_blank" class="project__link">Technical Documentation Page</a>          
-        </h3>       
-      </div>
-    </div>
-  </section>
-<!--   contact section -->
-  <section id="contact" class="contact">
-    <h2 class="contact__title">Let's Keep in Touch!</h2>
-    <p class="contact__text">
-      To contact me, send me a message or follow me in my social networks.
-    </p>
-    <form id="contact-form" method="POST" class="contact__form">
-      <div class="contact__group">
-        <input type="text" name="name" id="name" placeholder="Name" required class="contact__input"/>
-      </div>
-      <div class="contact__group">
-        <input type="email" name="_replyto" id="email" placeholder="Email" required class="contact__input"/>
-      </div>
-      <div class="contact__group">
-        <textarea name="comment" id="comment" placeholder="Comment..." class="contact__textarea" required></textarea>
-      </div>
-      <div class="contact__group">
-        <input type="submit" name="submit" value="submit" id="submit" class="contact__submit"/>
-        <!-- formSpree hidden inputs -->
-        <input type="hidden" name="_subject" value="personal-portfolio" />
-        <input type="text" name="_gotcha" style="display:none" />
-      </div>
-    </form>
-  </section>
-<!--   footer -->
-  <footer class="footer">
-    <div class="footer__social-links">
-      <a href="https://github.com/mauroef" target="_blank"><i class="fab fa-github fa-3x footer__sl"></i></a>
-      <a href="https://linkedin.com/in/mauroef" target="_blank"><i class="fab fa-linkedin fa-3x footer__sl"></i></a>
-      <a href="https://linkedin.com/in/mauroef" target="_blank"><i class="fab fa-free-code-camp fa-3x footer__sl"></i></a>
-    </div>
-    <div class="footer__text">
-      <p style="margin: 0px 0px;">
-        Copyright © 2018 by Mauro Ezequiel Frete. All Rights Reserved.
-      </p>
-    </div>
-  </footer>
-</div>
-<script>
-  //security method for contact form
-  var contactForm = document.getElementById('contact-form');
-  contactForm.setAttribute(
-    'action', 'https://formspree.io/' +
-    'mauro.frete' +
-    '@' +
-    'yahoo' +
-    '.' +
-    'com' +
-    '.' +
-    'ar');
-</script>
-</body>
-
+    <script>
+      //security method for contact form
+      var contactForm = document.getElementById('contact-form');
+      contactForm.setAttribute(
+        'action',
+        'https://formspree.io/' +
+          'mauro.frete' +
+          '@' +
+          'yahoo' +
+          '.' +
+          'com' +
+          '.' +
+          'ar'
+      );
+    </script>
+  </body>
 </html>
