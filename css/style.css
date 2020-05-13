@@ -118,19 +118,15 @@ body {
 }
 .about__description {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .about__photo-container {
-  width: 30%;
-  padding: 0 15px;
+  margin: 0 auto;
 }
 .about__photo {
   border-radius: 10%;
   border: 9px solid var(--secondary-color);
-  margin: 0 auto;
-  max-width: 100%;
-  display: block;
-  height: auto;
-  width: 75%;
 }
 .about__text-container {
   color: #fff;
@@ -166,17 +162,20 @@ body {
 .skills__group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  /* margin: 0 auto; */
 }
 .skills__item {
-  margin: 0 75px;
+  margin: 20px auto;
 }
 .skills__icon-container {
   background-color: #fff;
   border-radius: 10px;
   border: 6px solid var(--secondary-color);
+  min-width: 250px;
 }
 .skills__icon {
+  text-align: center;
   padding: 20px;
   border-radius: 4px;
   color: #9c47fc;
@@ -200,7 +199,9 @@ body {
   color: #fff;
   font-size: 1.1em;
 }
-
+.skills__list > li {
+  line-height: 1.5;
+}
 /* practice & project*/
 .practice,
 .project {
@@ -440,6 +441,10 @@ body {
   .contact__form {
     margin: 0 200px;
   }
+  /* skills */
+  .skills__group {
+    justify-content: space-between;
+  }
   .practice,
   .project {
     margin: 0 200px;
@@ -449,30 +454,32 @@ body {
   /* navbar */
   .navbar__left {
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
   }
   .navbar__right {
-    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-  .navbar {
-    display: block;
+  .navbar__right::-webkit-scrollbar {
+    display: none;
   }
-  /* skills */
-  .skills__group {
-    justify-content: space-between;
+  /* welcome */
+  .welcome__arrow-icon {
+    display: none;
   }
   /* about-section */
   .about__description {
     flex-direction: column;
   }
   .about__photo-container {
-    width: 100%;
   }
   .about__photo {
-    margin: 0 auto;
   }
   .about__text-container {
-    width: 100%;
+    width: 80%;
   }
 }
 @media (max-width: 576px) {
