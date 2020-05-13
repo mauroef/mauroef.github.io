@@ -1,0 +1,17 @@
+{
+  "name": "Personal Porfolio",
+  "short_name": "Portfolio",
+  "theme_color": "#12c2e9",
+  "background_color": "#fff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

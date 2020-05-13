@@ -474,10 +474,6 @@ body {
   .about__description {
     flex-direction: column;
   }
-  .about__photo-container {
-  }
-  .about__photo {
-  }
   .about__text-container {
     width: 80%;
   }
