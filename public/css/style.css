@@ -91,7 +91,7 @@ body {
   background-color: var(--primary-color);
 }
 .welcome__action:hover {
-  animation-name: colorify-action;
+  animation-name: colorify;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
@@ -245,7 +245,7 @@ body {
 }
 .practice__item:hover,
 .project__item:hover {
-  animation-name: colorify-practice;
+  animation-name: colorify;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
@@ -319,7 +319,7 @@ body {
 }
 .contact__submit:hover {
   color: #fff;
-  animation-name: colorify-contact;
+  animation-name: colorify;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
@@ -368,20 +368,10 @@ body {
   line-height: 3;
 }
 /* keyframes */
-@keyframes colorify-action {
+@keyframes colorify {
   0% {
     background-color: var(--secondary-color);
   }
-  100% {
-    background-color: var(--accent-color);
-  }
-}
-@keyframes colorify-practice {
-  100% {
-    background-color: var(--accent-color);
-  }
-}
-@keyframes colorify-contact {
   100% {
     background-color: var(--accent-color);
   }
@@ -404,7 +394,6 @@ body {
   background: var(--secondary-color);
   -webkit-clip-path: polygon(100% 0, 0 100%, 100% 99%);
   clip-path: polygon(100% 0, 0 100%, 100% 99%);
-  /* margin-top: -90px; */
 }
 .diagonal__top--contact {
   width: 100%;
