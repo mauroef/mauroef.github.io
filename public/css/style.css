@@ -11,9 +11,6 @@ body {
 }
 /* container */
 .container {
-  /* --primary-color: #12c2e9;
-  --secondary-color: #c471ed;
-  --third-color: #f64f59; */
   --primary-color: #512da8;
   --secondary-color: #673ab7;
   --third-color: #d1c4e9;
@@ -436,6 +433,7 @@ body {
   .skills__group {
     justify-content: space-between;
   }
+  /* projects & practices */
   .practice,
   .project {
     margin: 0 200px;
@@ -445,7 +443,6 @@ body {
   /* navbar */
   .navbar__left {
     text-align: center;
-    /* width: 100%; */
   }
   .navbar__right {
     display: flex;
@@ -471,7 +468,8 @@ body {
 }
 @media (max-width: 576px) {
   /* practice-section */
-  .practice__item {
+  .practice__item,
+  .project__item {
     width: 100%;
   }
   /* underlines shorter */
