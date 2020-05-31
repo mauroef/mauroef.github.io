@@ -450,8 +450,8 @@ body {
     position: absolute;
     right: 0;
     height: 100%;
-    z-index: 3;
-    width: 96px;
+    z-index: 1;
+    width: 60px;
   }
   /* welcome */
   .welcome__arrow-icon {
