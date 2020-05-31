@@ -130,6 +130,7 @@ body {
 .about__photo {
   border-radius: 10%;
   border: 6px solid var(--accent-color);
+  width: 300px;
 }
 .about__text-container {
   color: var(--primary-text);
@@ -470,6 +471,10 @@ body {
   .practice__item,
   .project__item {
     width: 100%;
+  }
+  /* image */
+  .about__photo {
+    width: 200px;
   }
   /* underlines shorter */
   .about__title::after {
