@@ -440,8 +440,18 @@ body {
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-  .navbar__right::-webkit-scrollbar {
-    display: none;
+  .navbar__right::after {
+    background-image: linear-gradient(
+      to right,
+      rgba(22, 29, 37, 0),
+      var(--secondary-color)
+    );
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    z-index: 3;
+    width: 96px;
   }
   /* welcome */
   .welcome__arrow-icon {
