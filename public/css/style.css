@@ -324,13 +324,34 @@ body {
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
-/* download */
-.download {
+/* resume */
+.resume {
   padding: var(--section-padding) 0;
   background-color: var(--secondary-color);
 }
-.download__button {
+.resume__title {
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+}
+.resume__title::after {
+  content: '';
+  display: block;
+  border: 3px solid var(--accent-color);
+  width: 200px;
+  margin: 5px auto;
+}
+.resume__button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.resume__button {
   text-decoration: none;
+  text-align: center;
   font-size: 1.5em;
   padding: 15px;
   border: none;
@@ -339,9 +360,7 @@ body {
   font-weight: 700;
   cursor: pointer;
   background-color: var(--accent-color);
-  margin: 0 auto;
-  display: block;
-  width: fit-content;
+  min-width: 150px;
 }
 /* footer */
 .footer__social-links {
@@ -464,6 +483,13 @@ body {
   }
   .about__text-container {
     width: 80%;
+  }
+  .resume__button-wrapper {
+    flex-direction: column;
+    height: 200px;
+  }
+  .resume__button {
+    width: 70%;
   }
 }
 @media (max-width: 576px) {
