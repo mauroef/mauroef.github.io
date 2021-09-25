@@ -115,8 +115,8 @@ body {
 .about__title::after {
   content: '';
   display: block;
-  border: 3px solid var(--accent-color);
-  width: 125px;
+  border-top: 6px solid var(--accent-color);
+  width: 110px;
   margin: 5px auto;
 }
 .about__description {
@@ -159,8 +159,8 @@ body {
 .skills__title::after {
   content: '';
   display: block;
-  border: 3px solid var(--accent-color);
-  width: 110px;
+  border-top: 6px solid var(--accent-color);
+  width: 100px;
   margin: 5px auto;
 }
 .skills__group {
@@ -219,9 +219,12 @@ body {
 .project__title::after {
   content: '';
   display: block;
-  border: 3px solid var(--accent-color);
-  width: 300px;
+  border-top: 6px solid var(--accent-color);
+  width: 340px;
   margin: 5px auto;
+}
+.project__title::after {
+  width: 290px;
 }
 .practice__group,
 .project__group {
@@ -268,8 +271,8 @@ body {
 .contact__title::after {
   content: '';
   display: block;
-  border: 3px solid var(--accent-color);
-  width: 300px;
+  border-top: 6px solid var(--accent-color);
+  width: 360px;
   margin: 5px auto;
 }
 .contact__text {
@@ -338,7 +341,7 @@ body {
 .resume__title::after {
   content: '';
   display: block;
-  border: 3px solid var(--accent-color);
+  border-top: 6px solid var(--accent-color);
   width: 200px;
   margin: 5px auto;
 }
@@ -504,16 +507,22 @@ body {
   }
   /* underlines shorter */
   .about__title::after {
-    width: 75px;
+    width: 90px;
+  }
+  .skills__title::after {
+    width: 80px;
   }
   .practice__title::after {
-    width: 200px;
+    width: 270px;
   }
   .project__title::after {
-    width: 175px;
+    width: 230px;
   }
   .contact__title::after {
-    width: 150px;
+    width: 290px;
+  }
+  .resume__title::after {
+    width: 160px;
   }
   /* reduce titles */
   .welcome__title {
@@ -526,7 +535,8 @@ body {
   .skills__title,
   .practice__title,
   .project__title,
-  .contact__title {
+  .contact__title,
+  .resume__title {
     font-size: 2em;
   }
 }
